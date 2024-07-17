@@ -195,16 +195,16 @@
 # My_Set={1,'s',7.8}
 # My_Set.update([2,4.6,1,'r'])
 # print(My_Set)
-# my_set.update( [4, 5], {1, 6, 8} )xfkjdfkgkljfgkljfgjkgjk
+# my_set.update( [4, 5], {1, 6, 8} )
 # print(my_set)
 # myset = {1, 2, 3, 4}
 # print(myset)
 # # Removing a particular item using the discard() method
 # myset.discard(1)
 # print(myset)
-# myset.discard(5)  # the item was absent in the set
+# myset.discard(5)  # the item was absent in the set it will not give error if not present
 # print(myset)
-# Removing a particular item using the remove() method
+# Removing a particular item using the remove() method will give error if not present
 # myset.remove(4)   # the item was present in the set
 # print(myset)
 # myset.remove(5)   # the item was absent in the set
@@ -231,9 +231,9 @@
 # print('Set:', myset)
 # print('Min:', min(myset))
 # print('Max:', max(myset))
-# print(all({1, 2,'a',2.4}))
-# print(all({1, False}))
-# print(any({1, False}))
+# print(all({1, 2,5,2.4}))
+# print(all({1, False}))#same type only int or float
+# print(any({1, False}))#mix char and int,float then true
 # print(any({False, False}))
 # print(all({}))
 # print(any({}))
@@ -285,9 +285,13 @@
 # print(B-A)
 # # use difference function on B
 # B.difference(A)
-# a={1, 2,5, 4.6, 7.8, 'r', 's'}
+# a={1, 5,5, 4.6, 7.8, 'r', 's'}
 # b=frozenset(a)
 # print(b)
+# b.add(5)
+# print(b)not alphabet only number
+# print(dir(a))
+# c=b
 # frozenset() is an inbuilt Python function that takes an iterable object as input and makes it immutable. It Simply freezes the iterable objects and makes them unchangeable. The frozenset() function returns an unchangeable frozenset object (which is like a set object, only unchangeable).
 # d=dict({'boy':'roy','age':35})
 # print(d)
