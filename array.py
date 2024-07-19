@@ -42,7 +42,7 @@ import array as arr
 #     if x%2==0:
 #         sum+=x
 # print(sum)
-#alicing to an array
+#slicing to an array
 # a=arr.array('i',[1,2,3,4,5,6])
 # print(a[1:3])
 # a=arr.array('i',[9,2,3,4,5,6])
@@ -115,11 +115,12 @@ from numpy import reshape,arange,ones,zeros,eye
 # sum=b+c
 # print(sum)
 
-import numpy as np
+# import numpy as np
 # a=np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12]])
 # print(a[1:3,1:3])#here 1:3 of first for consider 2 list and 1:3for element selection range
-# print(a[:,1:2])
+#print(a[:,1:2])
 # print(a[1,:])
+# print(a[1:])
 # print(a[:,1])
 # a=np.array([20,30,40,50])
 # b=np.arange(4)
@@ -127,8 +128,8 @@ import numpy as np
 # print(np.add(a,b))
 # # print(a-b)
 # print(np.subtract(a,b))
-A=np.array([[1,1],[6,1]])
-B=np.array([[2,8],[3,4]])
-print(np.multiply(A,B))
-print(np.divide(A,B))
-print(B**2)
+# A=np.array([[1,1],[6,1]])
+# B=np.array([[2,8],[3,4]])
+# print(np.multiply(A,B))
+# print(np.divide(A,B))
+# print(B**2)
