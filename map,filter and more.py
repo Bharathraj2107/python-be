@@ -1,8 +1,8 @@
 # lst=['kousalya','bhavitha','bhuvan','namitha']
 # lst_upper_case=list(map(str.upper,lst))
 # print(lst_upper_case)
-# circle_areas=[3.56,5.57,4.009,5.624,9.01344,3.2001]
-# res=list(map(round,circle_areas,range(2,7)))
+# circle_areas=[3.5,5.57,4.09,5.624,9.01344,3.2001]
+# res=list(map(round,circle_areas,range(2,7)))#here do 7-2 we get 5 so it is 0 based indexing so we get from 0 to 4
 # print(res)
 # strings=['a','b','c','d','e']
 # numbers=[1,2,3,4,5]
@@ -30,6 +30,6 @@ from functools import reduce
 # numbers=[1,2,3,4,5]
 # total=reduce(lambda x,y:x+y,numbers)
 # print(total)
-numbers=[1,7,3,9,5]
-max_number=reduce(lambda x,y:x if x>y else y,numbers)
-print(max_number)
+# numbers=[1,7,3,9,5]
+# max_number=reduce(lambda x,y:x if x>y else y,numbers)
+# print(max_number)
