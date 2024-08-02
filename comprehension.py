@@ -185,7 +185,7 @@ list2=["jkl","mno","pqr"]
 # print(pair_num)
 
 #create a dictionary of numbers and their factorials
-import math
-numbers=[1,2,3,4,5]
-factorials={x:math.factorial(x) for x in numbers}
-print(factorials)
+# import math
+# numbers=[1,2,3,4,5]
+# factorials={x:math.factorial(x) for x in numbers}
+# print(factorials)
