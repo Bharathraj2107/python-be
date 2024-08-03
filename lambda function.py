@@ -13,3 +13,18 @@
 # print(res(13))
 # str=lambda string:string in "welcome to the worldd of lambda functions in python"
 # print(str('python'))
+# lit = [(1, 2, 3), {"name": "bha"}, {6, 5, 4}]
+# val=list(lit[2])
+# print(val[2])
+ # This will convert the set to a list and print the second element
+# list=["c","java",["c++","php"]]
+# # list.insert(-1 ,"high")
+# list[-1].insert(0,"python")
+# list[2].insert(0,"python")
+# print(list)
+# print("****************************")
+# list=[1,2,3,4,5,6,7,8,9,10]
+# print(list[3:5:2])
+Team={
+    age=[20,30,40,50]
+}
