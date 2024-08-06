@@ -1,5 +1,33 @@
 import datetime#this provides class for manipulating date and time
 
+# Script starts.
+# datetime module is imported.
+# greet_with_time decorator is defined.
+# greet function is defined and decorated
+# with greet_with_time.
+# User is prompted to enter  their name.
+# User enterstheir
+# name, and it is stored in name.
+# greet(name) is called:
+# wrapper function from greet_with_time decorator
+# executes:
+# Current time is obtained.
+# Original greet function is called
+# with the modified name argument.
+# Greeting message with the current time is printed.
+
+# The greet_with_time function is defined, taking a function func as an argument.
+# Inside greet_with_time, the wrapper function is defined. It takes a single argument name.
+# The wrapper function gets the current time using datetime.datetime.now().time() and converts it to a string.
+# It then calls the original function func, appending a message with the current time to the argument name.
+# The greet_with_time function returns the wrapper function.
+#
+# The greet function (which is now the wrapper function returned by the greet_with_time decorator) is called with the argument name.
+# Inside the wrapper function:
+# The current time is obtained using datetime.datetime.now().time() and converted to a string.
+# The original greet function is called with the modified name argument, which now includes the current time message.
+# The print statement inside the original greet function executes, printing the greeting message with the current time.
+
 def greet_with_time(func):
     def wrapper(name):
         current_time=str(datetime.datetime.now().time())
@@ -30,6 +58,7 @@ greet(name)
 #     return actual_decorator
 # @authenticate
 # @greet_with_time("%I:%M %p")
+
 # def greet(name):
 #     print("hello"+name)
 #
