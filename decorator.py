@@ -6,8 +6,8 @@ import datetime#this provides class for manipulating date and time
 # greet function is defined and decorated
 # with greet_with_time.
 # User is prompted to enter  their name.
-# User enterstheir
-# name, and it is stored in name.
+# User enters their name
+# and it is stored in name.
 # greet(name) is called:
 # wrapper function from greet_with_time decorator
 # executes:
@@ -28,41 +28,43 @@ import datetime#this provides class for manipulating date and time
 # The original greet function is called with the modified name argument, which now includes the current time message.
 # The print statement inside the original greet function executes, printing the greeting message with the current time.
 
-def greet_with_time(func):
-    def wrapper(name):
-        current_time=str(datetime.datetime.now().time())
-        func(name+"! the time is currently"+current_time)
+# def greet_with_time(func):
+#     def wrapper(name):
+#         current_time=str(datetime.datetime.now().time())
+#         func(name+"! the time is currently"+current_time)
+#     return wrapper
+# @greet_with_time
+#
+# def greet(name):
+#     print("hello"+name)
+# name=input("enter your name")
+# greet(name)
+#when greet is called it goes to the wrapper  inside the greet _with_time and obtains the datetime and original greet function
+#updates at func and return the wrapper greet_with_time The print statement inside the original greet function executes, printing the greeting message with the current time.
+
+def authenticate(func):
+    def wrapper(name):#here name contains john from original function
+        if name=="john":
+            func(name)#here it contains hello john that is print of original function
+        else:
+            print("access denied")
     return wrapper
-@greet_with_time
+
+def greet_with_time(format_string):
+    def actual_decorator(func):#here it contains hello john that is print of original function
+        def wrapper(name):
+            current_time=datetime.datetime.now().time()
+            formatted_time=current_time.strftime(format_string)
+            func(name+"! the time is currently"+formatted_time)
+        return wrapper
+    return actual_decorator
+@authenticate
+@greet_with_time("%I:%M %p")
 
 def greet(name):
     print("hello"+name)
-name=input("enter your name")
-greet(name)
-#
-# def authenticate(func):
-#     def wrapper(name):
-#         if name=="john":
-#             func(name)
-#         else:
-#             print("access denied")
-#     return wrapper
-#
-# def greet_with_time(format_string):
-#     def actual_decorator(func):
-#         def wrapper(name):
-#             current_time=datetime.datetime.now().time()
-#             formatted_time=current_time.strftime(format_string)
-#             func(name+"! the time is currently"+formatted_time)
-#         return wrapper
-#     return actual_decorator
-# @authenticate
-# @greet_with_time("%I:%M %p")
 
-# def greet(name):
-#     print("hello"+name)
-#
-# greet("john")
+greet("john")
 
 # def site():
 #     print("python programming... im calling by the variable")
@@ -93,13 +95,42 @@ greet(name)
 #     print(square())
 # math(2)
 
-# def sum_decorator(func):
-#     def inner_demo():
-#         print("the addition of two odd numbers 3 and 7")
-#         func()
-#         print("is always an even number")
-#     return inner_demo
-# @sum_decorator
-# def odd_add():
-#     print(3+7)
-# odd_add()
+def sum_decorator(func):
+    def inner_demo():
+        print("the addition of two odd numbers 3 and 7")
+        func()
+        print("is always an even number")
+    return inner_demo
+@sum_decorator
+def odd_add():
+    print(3+7)
+odd_add()
+
+# def greet_with_time(func):
+#     def wrapper(name):
+#         current_time=str(datetime.datetime.now().time())
+#         func(name+"! the time is currently"+current_time)
+#     return wrapper
+# @greet_with_time
+#
+# def greet(name):
+#     print("hello"+name)
+# name=input("enter your name")
+# greet(name)
+
+print("************* My try **************")
+def say_hi_ask_number(func):#heere it has print("hello raj how are u")
+    def wrapper(name):
+        func(name+" what is your number")#here in the place of name it will add name and the message associated with it and add remaining
+        #it will add from the orignal function that is sayhi and it will print what is inside the print
+
+    return wrapper
+
+
+@say_hi_ask_number
+def sayhi(name):
+    print("hello "+name +" how are you")
+
+sayhi("Raj")
+#when we call this function if it has some print statement it will be carried to the
+#decorator in func parameter

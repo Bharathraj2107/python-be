@@ -133,3 +133,71 @@ from numpy import reshape,arange,ones,zeros,eye
 # print(np.multiply(A,B))
 # print(np.divide(A,B))
 # print(B**2)
+# cars=["toyota","wagner","mustang"]
+# # for i in cars:
+# #     print(i)
+# # cars.append("lamborgini")
+# print(cars.remove("toyota"))
+# print(cars)
+# print(len(cars))
+# print(cars[0])
+# cars[0]="audi"
+# print(cars[0])
+# fruits = ['apple', 'banana', 'cherry', 'orange']
+# print(fruits)
+# x = fruits.count('cherry')
+# print(x)
+# fruits = ['apple', 'banana', 'cherry']
+#
+# cars = ['Ford', 'BMW', 'Volvo']
+#
+# fruits.extend(cars)
+# print(fruits)
+# fruits = ['apple', 'banana', 'cherry']
+# fruits.insert(1,"mango")
+# print(fruits)
+# # fruits.pop()
+# # fruits.reverse()
+# x=fruits[::-1]
+# print(x)
+#
+# cars = ['Ford', 'Mitsubishi', 'BMW', 'VW']
+#
+# cars.sort(len(cars))
+# def myFunc(e):
+#   return len(e)
+#
+# cars = ['Ford', 'Mitsubishi', 'BMW', 'VW']
+#
+# cars.sort(key=myFunc)
+# print(cars)
+# cars = ['Ford', 'BMW', 'Volvo']
+#
+# cars.sort(reverse=True)
+# print(cars)
+#strings
+# a = """Lorem ipsum dolor sit amet,
+# consectetur adipiscing elit,
+# sed do eiusmod tempor incididunt
+# ut labore et dolore magna aliqua."""
+# print(a)
+# a = "Hello, World!"
+# print(a[1])
+# for x in "banana":
+#   print(x ,end="")
+# a = "Hello  World!"
+# print(len(a))
+# txt = "The best things in life are free!"
+# print("free" in txt)
+# b = "Hello, World!"
+# print(b[-5:-2])
+# txt = "hello, and welcome to my world."
+#
+# x = txt.capitalize()
+#
+# print (x)
+txt = "Hello, And Welcome To My World!"
+
+x = txt.casefold()
+
+print(x)
