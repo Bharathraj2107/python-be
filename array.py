@@ -196,8 +196,38 @@ from numpy import reshape,arange,ones,zeros,eye
 # x = txt.capitalize()
 #
 # print (x)
-txt = "Hello, And Welcome To My World!"
-
-x = txt.casefold()
-
-print(x)
+# txt = "Hello, And Welcome To My World!"
+#
+# x = txt.casefold()
+#
+# print(x)
+import array as arr
+numbers=arr.array('i',[10,20,30])
+numbers1=arr.array('i',[40,50,60])
+# numbers2=arr.array('i')
+# print(numbers[1])
+# print(len(numbers))
+# numbers.append(40)
+# numbers.insert(1,50)
+# numbers.extend(numbers1)
+numbers2=numbers+numbers1
+# print(numbers2)
+#print(numbers2.pop())
+# print(numbers2.pop(1))
+#print(numbers2.remove(40))
+# print(numbers2[0:3])
+# for x in numbers2[1:3]:
+#     print(x)
+# T=[[11,12,5,2],[15,6,10,5],[10,8,12,5],[12,15,8,6]]
+# T.insert(2,[0,5,11,13,6])
+# for r in T:
+#     for c in r:
+#         print(c,end=" ")
+#     print()
+# o=ones((3,4),int)
+# print(o)
+# b=eye(3)
+# print(b)
+# a=[1,2,3,4,5,6]
+# b=reshape(a,(2,3))
+# print(b)

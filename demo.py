@@ -245,3 +245,75 @@ a=[1,2,3,4,5,6,7]
 # car={"model":'swift',"color":'green',"tiers_count":4,"numberof_seats":4,"kmph":5,"price":500000}
 # print(car)
 
+nums=[2,7,11,15]
+target=9
+
+# def two_sum(nums,target):
+#     for i in nums:
+#         ans=target-i
+#         list.append(ans)
+#     if next in list:
+#         return nums[i]
+# print(
+#     b=two_sum(nums, target)
+#
+# print(answer)
+# def two_sum(nums, target):
+#     for i in range(len(nums)):
+#         for j in range(i+1,len(nums)):
+#             if nums[i]+nums[j]==target:
+#              return i,j
+# print(two_sum(nums, target))
+# #largest element
+# array=[1,2,3,4,5]
+# a=max(array)
+# print(a)
+# #second largest element
+# array=[1,2,3,4,5]
+# array.sort(reverse=True)
+# print(array[1])
+#remove duplicates
+# array=[1,1,2,5,4,3,4,5,1,2,2,3,4,5]
+# duplicate_removed=set(array)
+# print(duplicate_removed)
+#union of the array
+arr1=[1,2,3,4,5,6]
+arr2=[4,5,6,7,8,9]
+# arr1.extend(arr2)
+# # print(arr1)
+# union=set(arr1)
+# print(union)
+#intersection of sorted  array
+# list=[]
+# for i in arr1:
+#     for j in arr2:
+#      if i==j:
+#         list.append(i)
+# print(list)
+# arr=[1,2,3,4,5,6,7,8,9]
+# print(arr.index(2))
+# list=[]
+# arr=[0,1,2,3,4,5,0,0,0,4,5,0,8]
+# arr.sort(reverse=True)
+# print(arr)
+# arr=[9,5,4,3,8,7,2,1,6]
+# arr1_s=arr.sort()
+# if arr1==arr:
+#     print("sorted")
+# else:
+#     print("unsorted")
+#
+# arr=[1,2,3,4,5]
+# b=arr.pop(0)
+# arr.append(b)
+# print(arr)
+#string
+# a="mmadam"
+# b=set(a)
+# print(b)
+# b=a[::-1]
+# if a==b:
+#     print("yes")
+# else:
+#     print("no")
+
