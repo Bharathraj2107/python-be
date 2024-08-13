@@ -175,43 +175,118 @@ class Algebra(maths):
 # # E1.Edu_loan()
 # H1=Health_loan()
 # print(H1.Heth_loan())
-class Bank_loans:
-    pass
+# class Bank_loans:
+#     pass
+#
+# class Health_loan(Bank_loans):
+#     def Heth_loan(self):
+#         H_money = int(input("Enter the money: "))
+#         if 2000000 < H_money <= 4500000:
+#             return H_money * 0.50
+#         elif 1000000 < H_money <= 2000000:
+#             return H_money * 0.25
+#         else:
+#             return "Invalid amount for Health Loan"
+#
+# class Education_loan(Bank_loans):
+#     def Edu_loan(self):
+#         E_money = int(input("Enter the amount: "))
+#         if 2000000 < E_money <= 4500000:
+#             return E_money * 0.50
+#         elif 1000000 < E_money <= 2000000:
+#             return E_money * 0.25
+#         else:
+#             return "Invalid amount for Education Loan"
+#
+# class Vehicle_loan(Bank_loans):
+#     def veh_loan(self):
+#         v_money = int(input("Enter the amount: "))
+#         if 2000000 < v_money <= 4500000:
+#             return v_money * 0.50
+#         elif 1000000 < v_money <= 2000000:
+#             return v_money * 0.25
+#         else:
+#             return "Invalid amount for Vehicle Loan"
+# # v1=Vehicle_loan()
+# # print( v1.veh_loan())
+# # E1=Education_loan()
+# # print(E1.Edu_loan())
+#
+# # Usage example
+# H1 = Health_loan()
+# print(H1.Heth_loan())
+import math
+class Maths:
+    print("It is Parent class")
+class Algebra(Maths):
+   print("It is a child class for maths")
+class Heart(Algebra):
+    print("It is a child of class algebra heart Pattern ")
 
-class Health_loan(Bank_loans):
-    def Heth_loan(self):
-        H_money = int(input("Enter the money: "))
-        if 2000000 < H_money <= 4500000:
-            return H_money * 0.50
-        elif 1000000 < H_money <= 2000000:
-            return H_money * 0.25
-        else:
-            return "Invalid amount for Health Loan"
+    def heart_pattern(self):
+        print("  **     **  ")
+        print(" *  *   *  * ")
+        print("*    * *    *")
+        print("*             *")
+        print(" *           * ")
+        print("  *         *  ")
+        print("   *       *   ")
+        print("    *     *    ")
+        print("     *   *     ")
+        print("      * *      ")
+        print("       *       ")
 
-class Education_loan(Bank_loans):
-    def Edu_loan(self):
-        E_money = int(input("Enter the amount: "))
-        if 2000000 < E_money <= 4500000:
-            return E_money * 0.50
-        elif 1000000 < E_money <= 2000000:
-            return E_money * 0.25
-        else:
-            return "Invalid amount for Education Loan"
 
-class Vehicle_loan(Bank_loans):
-    def veh_loan(self):
-        v_money = int(input("Enter the amount: "))
-        if 2000000 < v_money <= 4500000:
-            return v_money * 0.50
-        elif 1000000 < v_money <= 2000000:
-            return v_money * 0.25
-        else:
-            return "Invalid amount for Vehicle Loan"
-# v1=Vehicle_loan()
-# print( v1.veh_loan())
-# E1=Education_loan()
-# print(E1.Edu_loan())
+class Amstrong_number(Algebra):
+    print("It is a child of class algebra Amstrong number")
+    def is_armstrong_number(self,num):
+        digits = str(num)
+        num_digits = len(digits)
+        armstrong_sum = 0
+        for digit in digits:
+            armstrong_sum += int(digit) ** num_digits
+        return armstrong_sum == num
 
-# Usage example
-H1 = Health_loan()
-print(H1.Heth_loan())
+class Geometry(Maths):
+    print("It is a child class for math")
+class Shapes(Geometry,Maths):
+    def area_of_rectangle(self,l,b):
+        rect_area =l*b
+        return rect_area
+
+    def area_of_Triangle(self,b,h):
+        Tri_area=0.5*b*h
+        return Tri_area
+class Arithmetic(Maths):
+
+    def list_fact(self,all_elm):
+        list=[math.factorial(x) for x in all_elm]
+        print(list)
+
+    def arith_eq(self,a,b):
+        add=a+b
+        print(a+b)
+        sub=a-b
+        print(a - b)
+        mul=a*b
+        print(a * b)
+        div=a/b
+        print(a / b)
+
+s1=Shapes()
+s2=Shapes()
+h1=Heart()
+print(h1.heart_pattern())
+
+A1=Amstrong_number()
+num = int(input("Enter a number: "))
+if A1.is_armstrong_number(num):
+    print(f"{num} is an Armstrong number.")
+else:
+    print(f"{num} is not an Armstrong number.")
+
+print(s1.area_of_rectangle(10,20))
+print(s2.area_of_Triangle(10,20))
+A1=Arithmetic()
+A1.list_fact(all_elm=[1,2,3,4,5])
+print(A1.arith_eq(20,30))
