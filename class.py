@@ -215,78 +215,78 @@ class Algebra(maths):
 # # Usage example
 # H1 = Health_loan()
 # print(H1.Heth_loan())
-import math
-class Maths:
-    print("It is Parent class")
-class Algebra(Maths):
-   print("It is a child class for maths")
-class Heart(Algebra):
-    print("It is a child of class algebra heart Pattern ")
-
-    def heart_pattern(self):
-        print("  **     **  ")
-        print(" *  *   *  * ")
-        print("*    * *    *")
-        print("*             *")
-        print(" *           * ")
-        print("  *         *  ")
-        print("   *       *   ")
-        print("    *     *    ")
-        print("     *   *     ")
-        print("      * *      ")
-        print("       *       ")
-
-
-class Amstrong_number(Algebra):
-    print("It is a child of class algebra Amstrong number")
-    def is_armstrong_number(self,num):
-        digits = str(num)
-        num_digits = len(digits)
-        armstrong_sum = 0
-        for digit in digits:
-            armstrong_sum += int(digit) ** num_digits
-        return armstrong_sum == num
-
-class Geometry(Maths):
-    print("It is a child class for math")
-class Shapes(Geometry,Maths):
-    def area_of_rectangle(self,l,b):
-        rect_area =l*b
-        return rect_area
-
-    def area_of_Triangle(self,b,h):
-        Tri_area=0.5*b*h
-        return Tri_area
-class Arithmetic(Maths):
-
-    def list_fact(self,all_elm):
-        list=[math.factorial(x) for x in all_elm]
-        print(list)
-
-    def arith_eq(self,a,b):
-        add=a+b
-        print(a+b)
-        sub=a-b
-        print(a - b)
-        mul=a*b
-        print(a * b)
-        div=a/b
-        print(a / b)
-
-s1=Shapes()
-s2=Shapes()
-h1=Heart()
-print(h1.heart_pattern())
-
-A1=Amstrong_number()
-num = int(input("Enter a number: "))
-if A1.is_armstrong_number(num):
-    print(f"{num} is an Armstrong number.")
-else:
-    print(f"{num} is not an Armstrong number.")
-
-print(s1.area_of_rectangle(10,20))
-print(s2.area_of_Triangle(10,20))
-A1=Arithmetic()
-A1.list_fact(all_elm=[1,2,3,4,5])
-print(A1.arith_eq(20,30))
+# import math
+# class Maths:
+#     print("It is Parent class")
+# class Algebra(Maths):
+#    print("It is a child class for maths")
+# class Heart(Algebra):
+#     print("It is a child of class algebra heart Pattern ")
+#
+#     def heart_pattern(self):
+#         print("  **     **  ")
+#         print(" *  *   *  * ")
+#         print("*    * *    *")
+#         print("*             *")
+#         print(" *           * ")
+#         print("  *         *  ")
+#         print("   *       *   ")
+#         print("    *     *    ")
+#         print("     *   *     ")
+#         print("      * *      ")
+#         print("       *       ")
+#
+#
+# class Amstrong_number(Algebra):
+#     print("It is a child of class algebra Amstrong number")
+#     def is_armstrong_number(self,num):
+#         digits = str(num)
+#         num_digits = len(digits)
+#         armstrong_sum = 0
+#         for digit in digits:
+#             armstrong_sum += int(digit) ** num_digits
+#         return armstrong_sum == num
+#
+# class Geometry(Maths):
+#     print("It is a child class for math")
+# class Shapes(Geometry,Maths):
+#     def area_of_rectangle(self,l,b):
+#         rect_area =l*b
+#         return rect_area
+#
+#     def area_of_Triangle(self,b,h):
+#         Tri_area=0.5*b*h
+#         return Tri_area
+# class Arithmetic(Maths):
+#
+#     def list_fact(self,all_elm):
+#         list=[math.factorial(x) for x in all_elm]
+#         print(list)
+#
+#     def arith_eq(self,a,b):
+#         add=a+b
+#         print(a+b)
+#         sub=a-b
+#         print(a - b)
+#         mul=a*b
+#         print(a * b)
+#         div=a/b
+#         print(a / b)
+#
+# s1=Shapes()
+# s2=Shapes()
+# h1=Heart()
+# print(h1.heart_pattern())
+#
+# A1=Amstrong_number()
+# num = int(input("Enter a number: "))
+# if A1.is_armstrong_number(num):
+#     print(f"{num} is an Armstrong number.")
+# else:
+#     print(f"{num} is not an Armstrong number.")
+#
+# print(s1.area_of_rectangle(10,20))
+# print(s2.area_of_Triangle(10,20))
+# A1=Arithmetic()
+# A1.list_fact(all_elm=[1,2,3,4,5])
+# print(A1.arith_eq(20,30))
