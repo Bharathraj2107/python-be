@@ -1,41 +1,60 @@
-Total_amount=0
 class SB_123:
-    def Authorization(self):
-        acc_no=input("enter the account number")
-        if 'SB-123'==acc_no:
-            print("Account created successfully")
-    def deposit(self,Total_amount):
-        money=int(input("enter the money to deposit"))
-        Total_amount+=money
-        print(str(Total_amount)+' is deposited')
+    def __init__(self):
+        self.Total_amount = 0  # Initialize the balance as an instance variable
 
-    def Withdraw(self,Total_amount):
-        money=int(input("enter the money to withdraw"))
-        super()
-        Total_amount-=money
-        print(str(Total_amount)+' is withdrawn')
+    def Authorization(self):
+        acc_no = input("Enter the account number: ")
+        if acc_no == 'SB-123':
+            print("Account created successfully")
+        else:
+            print("Invalid account number")
+
+    def deposit(self):
+        money = int(input("Enter the money to deposit: "))
+        self.Total_amount += money
+        print(f'{money} is deposited. Total balance is {self.Total_amount}')
+
+    def Withdraw(self):
+        money = int(input("Enter the money to withdraw: "))
+        if money > self.Total_amount:
+            print("Insufficient funds!")
+        else:
+            self.Total_amount -= money
+            print(f'{money} is withdrawn. Remaining balance is {self.Total_amount}')
 
 
 class SB_124:
+    def __init__(self):
+        self.Total_amount = 0  # Initialize the balance as an instance variable
+
     def Authorization(self):
-        acc_no = input("enter the account number")
-        if 'SB-124' == acc_no:
+        acc_no = input("Enter the account number: ")
+        if acc_no == 'SB-124':
             print("Account created successfully")
+        else:
+            print("Invalid account number")
 
-    def deposit(self, Total_amount):
-        money = int(input("enter the money to deposit"))
-        Total_amount+=money
-        print(Total_amount)
+    def deposit(self):
+        money = int(input("Enter the money to deposit: "))
+        self.Total_amount += money
+        print(f'{money} is deposited. Total balance is {self.Total_amount}')
 
-    def Withdraw(self, Total_amount):
-        money = int(input("enter the money to withdraw"))
-        Total_amount-=money
-        print(Total_amount)
+    def Withdraw(self):
+        money = int(input("Enter the money to withdraw: "))
+        if money > self.Total_amount:
+            print("Insufficient funds!")
+        else:
+            self.Total_amount -= money
+            print(f'{money} is withdrawn. Remaining balance is {self.Total_amount}')
 
-b1=SB_123()
+
+# Example usage
+b1 = SB_123()
 b1.Authorization()
-b1.deposit(Total_amount)
-b1.Withdraw(Total_amount)
-# b2=SB_124()
-# b2.deposit(1200)
-# b2.Withdraw(200)
+b1.deposit()
+b1.Withdraw()
+
+# b2 = SB_124()
+# b2.Authorization()
+# b2.deposit()
+# b2.Withdraw()
