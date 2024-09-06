@@ -1,3 +1,4 @@
+#Encapsulation
 class BAG:
     def __init__(self,Eraser,pencil,pen,sharpner,):
         self.Eraser=Eraser#public variable
