@@ -1,12 +1,12 @@
-# from abc import ABC
-# class company:
-#     print("This is a  software company")
-#     salary_fulltime=30000
-#     salary_hourly=0
-#     # def fullemp_salary(self):
-#     #     pass
-#     # def hourly_salary(self):
-#     #     pass
+from abc import ABC
+class company:
+    print("This is a  software company")
+    salary_fulltime=30000
+    salary_hourly=0
+    # def fullemp_salary(self):
+    #     pass
+    # def hourly_salary(self):
+    #     pass
 # class full_time_employees(company):
 #     def fullemp_salary(self):
 #         holiday=int(input("enter the number of holidays taken by fulltime employee"))
@@ -35,7 +35,7 @@
 # print("The monthly salary of a hourly worker is ",eh.hourly_salary())
 #2
 # from abc import ABC, abstractmethod
-#
+
 # class PaymentGateway(ABC):
 #     def __init__(self, amount):
 #         self.amount = amount#for that instances this
@@ -133,17 +133,17 @@
 # m.add_review()
 # m.retriew_review()
 #4
-class Bank:
-    def __init__(self):
-        self.__username="BharathRaj"
-        self.__password="1234"
-    def account_access(self):
-        username=input("enter the username")
-        password=input("enter the password")
-        if username==self.__username and password==self.__password:
-            print("Access Granted")
-        else:
-            print("Invalid username or password")
-
-b=Bank()
-b.account_access()
+# class Bank:
+#     def __init__(self):
+#         self.__username="BharathRaj"
+#         self.__password="1234"
+#     def account_access(self):
+#         username=input("enter the username")
+#         password=input("enter the password")
+#         if username==self.__username and password==self.__password:
+#             print("Access Granted")
+#         else:
+#             print("Invalid username or password")
+#
+# b=Bank()
+# b.account_access()
