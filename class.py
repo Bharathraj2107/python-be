@@ -12,6 +12,7 @@
 # c1=cars()
 # c1.cars_info()
 # c1.display()
+
 #single in heritances
 # class ABC_company:
 #     def __init__(self,name,age,sal):
@@ -144,6 +145,7 @@ class Algebra(maths):
 # h1.four()
 # h1.six
 # #hierarchial class
+
 # class Bank_loans:
 #  pass
 #
@@ -249,6 +251,7 @@ class Algebra(maths):
 #
 # class Geometry(Maths):
 #     print("It is a child class for math")
+
 # class Shapes(Geometry,Maths):
 #     def area_of_rectangle(self,l,b):
 #         rect_area =l*b
